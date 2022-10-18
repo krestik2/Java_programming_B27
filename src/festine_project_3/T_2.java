@@ -23,7 +23,7 @@ public class T_2 {
 
 
         //looping through the String and converting each char into int
-        // Math.pow function multiplies each int by the number.length(): a*a*a ( 3 times because number.length=3) and adds to the sum
+        // Math.pow function multiplies each int by the number.length(): a*a*a ( 3 times because str.length=3) and adds to the sum
         // iterates through each number and ads to the sum
 
         for (int i = 0; i < str.length(); i++) {
