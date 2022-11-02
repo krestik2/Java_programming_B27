@@ -11,20 +11,38 @@ public class Task9 {
 
      */
 
-    public static boolean isAnagram(String one, String two){
-        for (int i = 0; i < one.length(); i++) {
-            for (int j = 0; j < two.length(); j++) {
-                if( one.charAt(i)==two.charAt(j)){
-                    return true;
-                }
+ public static boolean isAnagramWithArray(String str, String str1){
+        boolean equals = false;
 
-            }
 
-        }
-        return false;
+    char[]chars = str.toCharArray();
+    char[]chars1= str1.toCharArray();
+
+    Arrays.sort(chars);
+    Arrays.sort(chars1);
+
+    if(Arrays.equals(chars,chars1)){
+        equals=true;
     }
+
+
+        return equals;
+
+    }
+
+
 
     public static void main(String[] args) {
-        System.out.println("isAnagram(\"one\",\"eno\") = " + isAnagram("one", "eno"));
+        String a = "lol";
+        String b = "oll";
+        
+        System.out.println("String is built out of the same letters: " + isAnagramWithArray(a,b));
+
+        String c = "lol";
+        String d = "ole";
+      
+        System.out.println("String is built out of the same letters: " + isAnagramWithArray(c,d));
+
     }
 }
+
