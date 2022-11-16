@@ -11,8 +11,8 @@ Ex: FrequencyOfChars("AAABBCDD") ==> A3B2C1D2
     public static String frequency(String str){
         String result = "";
         for (int i = 0; i < str.length(); i++) {
-            int count = 0;
-            if(result.contains(str.substring(i, i+1))){
+            int count = 0; // count is set to 0 after each letter/char, because we need count for each letter
+            if(result.contains(str.substring(i, i+1))){ // we don't want to count duplicate letters
                 continue;
             }
             for (int j = 1; j < str.length(); j++) {

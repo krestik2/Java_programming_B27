@@ -58,6 +58,6 @@ Ex: removeDup("AAABBBCCC") ==> ABC
 
         System.out.println("removeDupWithStream(\"hello\") = " + removeDupWithStream("hello"));
 
-
+        System.out.println("removeDupWithLoop(\"AAAABBBBccccDDDD\") = " + removeDupWithLoop("AAAABBBBccccDDDD"));
     }
 }

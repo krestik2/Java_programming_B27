@@ -6,7 +6,7 @@ public class T_2 {
     Write a return method that can verify if a password is valid or not.
     requirements:
 
-            1. Password MUST be at least have 6 characters and should not contain space
+ 1. Password MUST be at least have 6 characters and should not contain space
 2. PassWord should at least contain one upper case letter
 3. PassWord should at least contain one lowercase letter
 4. Password should at least contain one special characters
@@ -17,12 +17,14 @@ if all requirements above are met, the method returns true, otherwise returns  f
 
     public static boolean validPassword(String str) {
 
+        if (str.length() < 6 || str.contains(" "))
+            return false;
+
         int countUpper = 0;
         int countLower = 0;
         int countDigit = 0;
         int countSpecial = 0;
-        if (str.length() < 6 || str.contains(" "))
-            return false;
+
 
         for (int i = 0; i < str.length(); i++) {
 
